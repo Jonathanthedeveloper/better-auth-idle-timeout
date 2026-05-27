@@ -1,8 +1,3 @@
----
-title: Idle Timeout
-description: Idle Timeout plugin for Better Auth
----
-
 # Better Auth Idle Timeout Plugin
 
 The Idle Timeout plugin automatically expires and revokes sessions after a specified period of user inactivity (idle time). It tracks user activity and automatically terminates the session in the database if no activity is detected within a timeout window. To prevent database write-locking and reduce database load, the plugin includes write-throttling on activity updates.
