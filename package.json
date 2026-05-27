@@ -1,0 +1,41 @@
+{
+  "name": "better-auth-idle-timeout",
+  "version": "1.0.0",
+  "description": "Idle timeout plugin for Better Auth",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "publish": "bun run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsup": "^8.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "better-auth": "^1.6.11"
+  },
+  "keywords": [
+    "better-auth",
+    "auth",
+    "plugin",
+    "idle",
+    "timeout",
+    "inactivity",
+    "session"
+  ],
+  "license": "MIT"
+}
